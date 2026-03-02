@@ -34,14 +34,21 @@ a:hover {
 }
 
 @media (min-width: 960px) {
-  .page--home .content,
-  .page--case .case-content,
-  .case-header,
-  .case-footer,
-  .site-footer {
-    width: min(1120px, 100%);
+  .site-header {
+    padding: 48px 0; /* убираем боковые паддинги */
+  }
+
+  /* центрируем внутренности по той же ширине, что и контент */
+  .site-header__left,
+  .site-header__right {
     margin-inline: auto;
   }
+
+  /* и задаём общей группе ширину как контейнер */
+  .site-header {
+    padding-inline: calc((100vw - 1120px) / 2);
+  }
+}
 
   .page--home .content,
   .page--case .case-content {
@@ -61,12 +68,12 @@ a:hover {
 
 .site-header {
   width: 100%;
-  min-height: 100vh;          /* во весь экран */
-  background: #e9e9ea;        /* как на скрине */
-  padding: 64px;
+  min-height: 100vh;
+  background: #e9e9ea;
+  padding: 48px 24px; /* как у content на мобилке */
   display: flex;
   justify-content: space-between;
-  align-items: center;        /* центр по вертикали */
+  align-items: flex-start;
   gap: 48px;
 }
 
@@ -516,4 +523,5 @@ a:hover {
 .case-media--poly-mobile {
   background: #ffffff;
 }
+
 
