@@ -96,7 +96,7 @@ a:hover {
 .site-title {
   margin: 0;
   font-weight: 500;
-  font-size: 56px;
+  font-size: 30px;
   line-height: 1.08;
   letter-spacing: -0.02em;
 }
@@ -104,7 +104,7 @@ a:hover {
 .site-subtitle {
   margin: 14px 0 0 0;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1.12;
   color: #8fa2b9;
   max-width: 760px;
@@ -502,6 +502,7 @@ a:hover {
 .case-media--poly-mobile {
   background: #ffffff;
 }
+
 
 
 
