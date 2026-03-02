@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Корпоративный портал — кейс Насти Поповой</title>
+    <title>Настя Попова — продуктовый дизайнер</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,126 +12,115 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="page page--case">
-    <header class="case-header">
-      <a href="index.html" class="back-link">← На главную</a>
-      <div class="case-header__top">
-        <div>
-          <p class="text-caption">Кейс</p>
-          <h1 class="case-title">Корпоративный портал</h1>
+  <body class="page page--home">
+    <header class="site-header">
+      <div class="site-header__left">
+        <div class="avatar" aria-hidden="true">
+          <img class="avatar__img" src="images/avatar.png" alt="Аватар Насти" />
+          <div class="avatar__circle"></div>
         </div>
-        <div class="case-header__meta">
-          <div class="case-header__meta-group">
-            <div class="text-caption">Роль</div>
-            <div class="case-header__meta-value">
-              Продуктовый дизайнер, исследователь
-            </div>
-          </div>
-          <div class="case-header__meta-group">
-            <div class="text-caption">Годы</div>
-            <div class="case-header__meta-value">2023–2025</div>
-          </div>
-          <div class="case-header__meta-group">
-            <div class="text-caption">Команда</div>
-            <div class="case-header__meta-value">Продукт, дизайн, разработка</div>
-          </div>
+
+        <div class="hero">
+          <h1 class="site-title">Привет! Меня зовут Настя</h1>
+          <p class="site-subtitle">
+            Я продуктовый дизайнер с опытом работы в B2B‑сервисах
+          </p>
         </div>
       </div>
-      <p class="case-lead">
-        В этом проекте я отвечала за исследование потребностей сотрудников,
-        проектирование навигации, интерфейсов и дизайн‑системы для корпоративного
-        портала. Основной задачей было сделать единую точку входа в сервисы
-        компании, удобную как для новых, так и для опытных сотрудников.
-      </p>
-      <div class="case-details">
-        <div>
-          <h2 class="case-section-title">Вызов</h2>
-          <p>
-            В компании существовало много разрозненных внутренних сервисов.
-            Сотрудникам было сложно находить нужную информацию и быстро решать
-            повседневные задачи. Требовался единый портал с понятной структурой и
-            фокусом на сценариях сотрудников.
-          </p>
-        </div>
-        <div>
-          <h2 class="case-section-title">Решение</h2>
-          <p>
-            Я провела интервью с сотрудниками и сформулировала ключевые сценарии:
-            поиск документов, работа с сервисами, новости компании. На их основе
-            спроектировала навигацию, карточки сервисов, страницу раздела и
-            дашборды. Итогом стала модульная дизайн‑система с компонентами,
-            которые можно масштабировать на новые разделы портала.
-          </p>
-        </div>
+
+      <div class="site-header__right">
+        <a href="CV.pdf" class="link-muted">CV</a>
+        <a href="mailto:nastimaa@yandex.ru" class="link-muted"
+          >nastimaa@yandex.ru</a
+        >
       </div>
     </header>
 
-    <main class="case-content">
-      <section class="case-block">
-        <div class="case-media case-media--large case-media--gradient">
-          <span class="case-media__label">Общий вид портала</span>
+    <main class="content">
+      <section class="case-card">
+        <a href="corporate-portal.html" class="case-card__image-link">
+          <figure
+            class="case-card__image case-card__image--hero case-card__image--gradient"
+          >
+            <img
+              src="images/cover-corporate.png"
+              alt="Корпоративный портал — обложка проекта"
+              class="case-card__image-media"
+            />
+          </figure>
+        </a>
+        <div class="case-card__meta">
+          <div class="text-caption">2023–2025</div>
+          <a href="corporate-portal.html" class="case-card__title-link">
+            <h2 class="case-card__title">Корпоративный портал</h2>
+          </a>
         </div>
-        <p class="case-text">
-          Главный экран собирает основные сценарии: быстрый доступ к сервисам,
-          поиску и избранным разделам. Большие карточки помогают быстро ориентироваться
-          даже при большом количестве сервисов.
-        </p>
       </section>
 
-      <section class="case-block case-block--two-column">
-        <div class="case-media case-media--tablet">
-          <span class="case-media__label">Каталог сервисов</span>
+      <section class="case-card">
+        <a href="b2b-service.html" class="case-card__image-link">
+          <figure class="case-card__image case-card__image--b2b">
+            <img
+              src="images/cover-b2b.png"
+              alt="B2B‑сервис — обложка проекта"
+              class="case-card__image-media"
+            />
+          </figure>
+        </a>
+        <div class="case-card__meta">
+          <div class="text-caption">2024–2025</div>
+          <a href="b2b-service.html" class="case-card__title-link">
+            <h2 class="case-card__title">B2B‑сервис</h2>
+          </a>
         </div>
-        <div class="case-media case-media--tablet case-media--soft">
-          <span class="case-media__label">Поиск и фильтры</span>
-        </div>
-        <p class="case-text case-text--wide">
-          Для работы с большим каталогом сервисов я спроектировала гибкую систему
-          фильтров и быстрый поиск по ключевым словам. Карточки сервисов содержат
-          краткое описание, владельца и статус, чтобы снизить количество переходов.
-        </p>
       </section>
 
-      <section class="case-block case-block--mixed">
-        <div class="case-media case-media--wide">
-          <span class="case-media__label">Принципы визуального языка</span>
+      <section class="case-card">
+        <a href="polyglotica.html" class="case-card__image-link">
+          <figure class="case-card__image case-card__image--poly">
+            <img
+              src="images/cover-polyglotica.png"
+              alt="Polyglotica — обложка проекта"
+              class="case-card__image-media"
+            />
+          </figure>
+        </a>
+        <div class="case-card__meta">
+          <div class="text-caption">2025</div>
+          <a href="polyglotica.html" class="case-card__title-link">
+            <h2 class="case-card__title">Polyglotica</h2>
+          </a>
         </div>
-        <div class="case-media case-media--square">
-          <span class="case-media__label">Айдентика портала</span>
-        </div>
-        <p class="case-text">
-          Визуальный язык опирается на фирменные цвета компании и иллюстрации,
-          которые делают внутренний продукт чуть более дружелюбным. При этом
-          интерфейс остаётся сдержанным и функциональным.
-        </p>
       </section>
 
-      <section class="case-block">
-        <div class="case-media case-media--screen">
-          <span class="case-media__label">Рабочие дашборды</span>
+      <section class="skills">
+        <div class="skills__column">
+          <h3 class="skills__title">Навыки</h3>
+          <p class="skills__text">
+            Проектирование интерфейсов, продуктовый подход, графический дизайн,
+            исследование пользовательских сценариев, прототипирование, тестирование
+            гипотез, дизайн‑системы.
+          </p>
         </div>
-        <p class="case-text">
-          Для отдельных ролей (например, администраторов портала) я проработала
-          дашборды с виджетами: статистика использования, заявки, актуальные задачи.
-        </p>
-      </section>
-
-      <section class="case-block">
-        <div class="case-media case-media--screen case-media--orange">
-          <span class="case-media__label">Страница статьи и новости</span>
+        <div class="skills__column">
+          <h3 class="skills__title">Инструменты</h3>
+          <p class="skills__text">
+            Figma, FigJam, Pixso, Illustrator, Photoshop, Notion, Miro, HTML/CSS,
+            ChatGPT, Perplexity, Claude и другие.
+          </p>
         </div>
-        <p class="case-text">
-          Контентные страницы подчиняются единой сетке и типографике, что упрощает
-          чтение длинных текстов и работу редакторов.
-        </p>
       </section>
     </main>
 
-    <footer class="case-footer">
-      <a href="b2b-service.html" class="next-case">
-        <span class="next-case__label">Следующий кейс</span>
-        <span class="next-case__title">B2B‑сервис</span>
-      </a>
+    <footer class="site-footer">
+      <nav class="footer-nav">
+        <a href="#" class="footer-nav__link">Telegram</a>
+        <a href="#" class="footer-nav__link">LinkedIn</a>
+        <a href="#" class="footer-nav__link">Dribbble</a>
+      </nav>
+      <div class="site-footer__right">
+        <span class="footer-tag">Made with HTML &amp; CSS</span>
+      </div>
     </footer>
   </body>
 </html>
