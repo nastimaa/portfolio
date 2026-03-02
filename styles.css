@@ -155,12 +155,11 @@ a:hover {
   background-image: linear-gradient(145deg, #f46b45, #eea849);
 }
 
-.case-card__image--poly-left {
-  background: #ffe96b;
-}
-
-.case-card__image--poly-right {
-  background: #ffe96b;
+.case-card__image--poly-left,
+.case-card__image--poly-right,
+.case-card__image--poly {
+  /* используем базовый нейтральный фон, картинка даёт цвет */
+  background: #e6e6ea;
 }
 
 .case-card__image-media {
