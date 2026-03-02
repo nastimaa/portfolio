@@ -3,110 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Настя Попова — продуктовый дизайнер</title>
+    <title>Настя — продуктовый дизайнер</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="page page--home">
+
     <header class="site-header">
       <div class="site-header__left">
         <div class="avatar">
-          <img src="images/avatar.png" alt="Настя" class="avatar__img" />
+          <img src="images/avatar.jpg" alt="Настя" class="avatar__img" />
         </div>
         <div class="hero">
           <h1 class="site-title">Привет! Меня зовут Настя</h1>
-          <p class="site-subtitle">
-            Я продуктовый дизайнер с опытом работы в B2B‑сервисах
-          </p>
+          <p class="site-subtitle">Я продуктовый дизайнер с опытом работы в B2B‑сервисах</p>
         </div>
       </div>
-
       <div class="site-header__right">
         <a href="CV.pdf" class="link-muted">CV</a>
-        <a href="/cdn-cgi/l/email-protection#16787765627f7b7777566f777872736e386463" class="link-muted"><span class="__cf_email__" data-cfemail="8fe1eefcfbe6e2eeeecff6eee1ebeaf7a1fdfa">nastimaa@yandex.ru</span></a
-        >
+        <a href="mailto:nastimaa@yandex.ru" class="link-muted">nastimaa@yandex.ru</a>
       </div>
     </header>
 
     <main class="content">
-      <section class="case-card">
-        <a href="corporate-portal.html" class="case-card__image-link">
-          <figure
-            class="case-card__image case-card__image--hero case-card__image--gradient"
-          >
-            <img
-              src="images/cover-corporate.png"
-              alt="Корпоративный портал — обложка проекта"
-              class="case-card__image-media"
-            />
-          </figure>
-        </a>
-        <div class="case-card__meta">
-          <div class="text-caption">2023–2025</div>
-          <a href="corporate-portal.html" class="case-card__title-link">
-            <h2 class="case-card__title">Корпоративный портал</h2>
+
+      <section class="project">
+        <h2 class="project__title">Корпоративный портал</h2>
+        <div class="project__desc">
+          <p class="project__desc-col">Исследование потребностей сотрудников, проектирование навигации, интерфейсов и дизайн-системы. Основная задача — сделать единую точку входа в сервисы компании.</p>
+          <p class="project__desc-col">Провела интервью, сформулировала ключевые сценарии. Итогом стала модульная дизайн-система с компонентами, которые можно масштабировать на новые разделы портала.</p>
+        </div>
+        <div class="project__media">
+          <a href="corporate-portal.html" class="project__media-item project__media-item--large">
+            <img src="images/cover-corporate.png" alt="Корпоративный портал" />
           </a>
+          <a href="corporate-portal.html" class="project__media-item">
+            <img src="images/cover-corporate.png" alt="Корпоративный портал — детали" />
+          </a>
+        </div>
+        <div class="project__meta">
+          <span class="text-caption">2023–2025</span>
+          <span class="text-caption">Продуктовый дизайнер, исследователь</span>
         </div>
       </section>
 
-      <section class="case-card">
-        <a href="b2b-service.html" class="case-card__image-link">
-          <figure class="case-card__image case-card__image--b2b">
-            <img
-              src="images/cover-b2b.png"
-              alt="B2B‑сервис — обложка проекта"
-              class="case-card__image-media"
-            />
-          </figure>
-        </a>
-        <div class="case-card__meta">
-          <div class="text-caption">2024–2025</div>
-          <a href="b2b-service.html" class="case-card__title-link">
-            <h2 class="case-card__title">B2B‑сервис</h2>
+      <section class="project">
+        <h2 class="project__title">B2B‑сервис</h2>
+        <div class="project__desc">
+          <p class="project__desc-col">B2B-сервис для аналитиков и внутренних команд, который помогает работать с большим объёмом данных: выгружать отчёты, управлять сущностями и согласовывать изменения.</p>
+          <p class="project__desc-col">Спроектировала расширяемую таблицу со строками-объектами и быстрыми действиями. Сфокусировалась на читаемости, иерархии и управлении состояниями.</p>
+        </div>
+        <div class="project__media">
+          <a href="b2b-service.html" class="project__media-item project__media-item--large">
+            <img src="images/cover-b2b.png" alt="B2B-сервис" />
           </a>
+          <a href="b2b-service.html" class="project__media-item">
+            <img src="images/cover-b2b.png" alt="B2B-сервис — детали" />
+          </a>
+        </div>
+        <div class="project__meta">
+          <span class="text-caption">2024–2025</span>
+          <span class="text-caption">Продуктовый дизайнер, UX-исследователь</span>
         </div>
       </section>
 
-      <section class="case-card">
-        <a href="polyglotica.html" class="case-card__image-link">
-          <figure class="case-card__image case-card__image--poly">
-            <img
-              src="images/cover-polyglotica.png"
-              alt="Polyglotica — обложка проекта"
-              class="case-card__image-media"
-            />
-          </figure>
-        </a>
-        <div class="case-card__meta">
-          <div class="text-caption">2025</div>
-          <a href="polyglotica.html" class="case-card__title-link">
-            <h2 class="case-card__title">Polyglotica</h2>
+      <section class="project">
+        <h2 class="project__title">Polyglotica</h2>
+        <div class="project__desc">
+          <p class="project__desc-col">Concept UI / EdTech проект. Онлайн-платформа для изучения языков с реальными экспертами. Яркий жёлто-розовый стиль, сильный визуальный язык.</p>
+          <p class="project__desc-col">Разработала айдентику, сайт и мобильное приложение. Цветовая система и иллюстрации создают ощущение живого и дружелюбного продукта.</p>
+        </div>
+        <div class="project__media">
+          <a href="polyglotica.html" class="project__media-item project__media-item--large">
+            <img src="images/cover-polyglotica.png" alt="Polyglotica" />
           </a>
+          <a href="polyglotica.html" class="project__media-item">
+            <img src="images/cover-polyglotica.png" alt="Polyglotica — айдентика" />
+          </a>
+        </div>
+        <div class="project__meta">
+          <span class="text-caption">2025</span>
+          <span class="text-caption">Concept UI / EdTech</span>
         </div>
       </section>
 
       <section class="skills">
         <div class="skills__column">
           <h3 class="skills__title">Навыки</h3>
-          <p class="skills__text">
-            Проектирование интерфейсов, продуктовый подход, графический дизайн,
-            исследование пользовательских сценариев, прототипирование, тестирование
-            гипотез, дизайн‑системы.
-          </p>
+          <p class="skills__text">Проектирование интерфейсов, продуктовый подход, графический дизайн, исследование пользовательских сценариев, прототипирование, тестирование гипотез, дизайн‑системы.</p>
         </div>
         <div class="skills__column">
           <h3 class="skills__title">Инструменты</h3>
-          <p class="skills__text">
-            Figma, FigJam, Pixso, Illustrator, Photoshop, Notion, Miro, HTML/CSS,
-            ChatGPT, Perplexity, Claude и другие.
-          </p>
+          <p class="skills__text">Figma, FigJam, Pixso, Illustrator, Photoshop, Notion, Miro, HTML/CSS, ChatGPT, Perplexity, Claude и другие.</p>
         </div>
       </section>
+
     </main>
 
     <footer class="site-footer">
@@ -116,6 +109,9 @@
         <a href="#" class="footer-nav__link">Dribbble</a>
       </nav>
       <div class="site-footer__right">
+        <span class="footer-tag">Made with HTML &amp; CSS</span>
+      </div>
+    </footer>
 
-
-
+  </body>
+</html>
