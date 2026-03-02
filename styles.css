@@ -53,7 +53,6 @@ a:hover {
 /* Хедер */
 .site-header {
   width: 100%;
-  min-height: 100vh;          /* во весь экран как ты хотела */
   height: 184px;
   background: #ffffff;
   padding: 64px;
@@ -503,6 +502,7 @@ a:hover {
 .case-media--poly-mobile {
   background: #ffffff;
 }
+
 
 
 
