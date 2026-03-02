@@ -34,17 +34,6 @@ a:hover {
 }
 
 @media (min-width: 960px) {
-  .site-header {
-  width: 100%;
-  min-height: 100vh;
-  background: #e9e9ea;
-  padding: 64px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;   /* центр по вертикали */
-  gap: 48px;
-}
-
   .page--home .content,
   .page--case .case-content {
     padding-inline: 0;
@@ -63,12 +52,12 @@ a:hover {
 
 .site-header {
   width: 100%;
-  min-height: 100vh;
+  height: 184px;              /* фиксированная высота */
   background: #e9e9ea;
-  padding: 64px;
+  padding: 0 64px;            /* только боковые отступы */
   display: flex;
   justify-content: space-between;
-  align-items: center;   /* центр по вертикали */
+  align-items: center;        /* центр по вертикали */
   gap: 48px;
 }
 
@@ -77,13 +66,14 @@ a:hover {
   align-items: center;
   gap: 40px;
   flex: 1;
+  min-width: 0;
 }
 
 .avatar {
   position: relative;
-  width: 120px;
-  height: 120px;
-  flex: 0 0 120px;
+  width: 96px;
+  height: 96px;
+  flex: 0 0 96px;
 }
 
 .avatar__img {
@@ -101,13 +91,14 @@ a:hover {
 }
 
 .hero {
-  max-width: 900px;   /* ограничиваем ширину */
+  max-width: 900px;
+  min-width: 0;
 }
 
 .site-title {
   margin: 0;
   font-weight: 500;
-  font-size: 48px;    /* умеренный размер */
+  font-size: 48px;
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
@@ -123,9 +114,8 @@ a:hover {
 
 .site-header__right {
   display: flex;
-  align-items: flex-start;
+  align-items: center;        /* было flex-start — теперь ровно по центру */
   gap: 28px;
-  padding-top: 8px;
   white-space: nowrap;
 }
 
@@ -514,6 +504,3 @@ a:hover {
 .case-media--poly-mobile {
   background: #ffffff;
 }
-
-
-
