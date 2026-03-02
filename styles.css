@@ -37,7 +37,6 @@ a:hover {
   .page--home .content,
   .page--case .case-content,
   .case-header,
-  .site-header,
   .case-footer,
   .site-footer {
     width: min(1120px, 100%);
@@ -61,18 +60,21 @@ a:hover {
 /* Главная */
 
 .site-header {
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 48px 64px;
+  padding: 64px 64px;
   gap: 32px;
 }
 
 .site-header__left {
   display: flex;
   align-items: flex-start;
-  gap: 32px;
+  gap: 48px;
   min-width: 0;
+  flex: 1;
 }
 
 .avatar {
@@ -102,23 +104,24 @@ a:hover {
 
 .hero {
   min-width: 0;
+  flex: 1;
 }
 
 .site-title {
   margin: 0;
   font-weight: 500;
-  font-size: 56px;
-  line-height: 1.08;
+  font-size: clamp(56px, 6vw, 96px);
+  line-height: 1.05;
   letter-spacing: -0.02em;
 }
 
 .site-subtitle {
   margin: 14px 0 0 0;
   font-weight: 400;
-  font-size: 36px;
+  font-size: clamp(28px, 3vw, 48px);
   line-height: 1.12;
   color: #8fa2b9;
-  max-width: 760px;
+  max-width: none;
 }
 
 .site-header__right {
