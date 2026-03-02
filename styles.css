@@ -54,7 +54,7 @@ a:hover {
 .site-header {
   width: 100%;
   min-height: 100vh;          /* во весь экран как ты хотела */
-  background: #e9e9ea;
+  background: #ffffff;
   padding: 64px;
   display: flex;
   justify-content: space-between;
@@ -74,9 +74,9 @@ a:hover {
 /* Аватар — крупнее, как на референсе */
 .avatar {
   position: relative;
-  width: 160px;
-  height: 160px;
-  flex: 0 0 160px;
+  width: 120px;
+  height: 120px;
+  flex: 0 0 120px;
 }
 
 .avatar__img {
@@ -502,6 +502,7 @@ a:hover {
 .case-media--poly-mobile {
   background: #ffffff;
 }
+
 
 
 
