@@ -54,12 +54,13 @@ a:hover {
 .site-header {
   width: 100%;
   min-height: 100vh;          /* во весь экран как ты хотела */
+  height: 184px;
   background: #ffffff;
   padding: 64px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;     /* как в референсе: сверху, не по центру */
-  gap: 48px;
+  align-items: center;
+  gap: 32px;
 }
 
 /* Левый блок */
@@ -502,6 +503,7 @@ a:hover {
 .case-media--poly-mobile {
   background: #ffffff;
 }
+
 
 
 
