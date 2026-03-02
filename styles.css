@@ -72,8 +72,14 @@ a:hover {
 }
 
 .hero {
-  width: 454px;     /* фиксированная ширина */
-  flex: 0 0 454px;  /* чтобы flex не растягивал */
+  width: 454px;
+  flex: 0 0 454px;  /* не растягивается и не сжимается */
+}
+
+/* Правый блок — прижат к правому краю */
+.site-header__right {
+  flex-shrink: 0;  /* не сжимается */
+  margin-left: auto; /* автоматический отступ слева — весь свободный воздух уходит сюда */
 }
 
 /* Аватар — крупнее, как на референсе */
@@ -116,8 +122,10 @@ a:hover {
 }
 
 .site-header__right {
+  flex-shrink: 0;
+  margin-left: auto;
   display: flex;
-  align-items: center;        /* было flex-start — теперь ровно по центру */
+  align-items: center;
   gap: 28px;
   white-space: nowrap;
 }
@@ -507,11 +515,3 @@ a:hover {
 .case-media--poly-mobile {
   background: #ffffff;
 }
-
-
-
-
-
-
-
-
