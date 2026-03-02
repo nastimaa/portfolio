@@ -71,6 +71,11 @@ a:hover {
   min-width: 0;
 }
 
+.hero {
+  width: 454px;     /* фиксированная ширина */
+  flex: 0 0 454px;  /* чтобы flex не растягивал */
+}
+
 /* Аватар — крупнее, как на референсе */
 .avatar {
   position: relative;
@@ -502,6 +507,7 @@ a:hover {
 .case-media--poly-mobile {
   background: #ffffff;
 }
+
 
 
 
