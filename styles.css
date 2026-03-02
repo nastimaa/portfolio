@@ -35,19 +35,14 @@ a:hover {
 
 @media (min-width: 960px) {
   .site-header {
-    padding: 48px 0; /* убираем боковые паддинги */
-  }
-
-  /* центрируем внутренности по той же ширине, что и контент */
-  .site-header__left,
-  .site-header__right {
-    margin-inline: auto;
-  }
-
-  /* и задаём общей группе ширину как контейнер */
-  .site-header {
-    padding-inline: calc((100vw - 1120px) / 2);
-  }
+  width: 100%;
+  min-height: 100vh;
+  background: #e9e9ea;
+  padding: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;   /* центр по вертикали */
+  gap: 48px;
 }
 
   .page--home .content,
@@ -70,10 +65,10 @@ a:hover {
   width: 100%;
   min-height: 100vh;
   background: #e9e9ea;
-  padding: 48px 24px; /* как у content на мобилке */
+  padding: 64px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;   /* центр по вертикали */
   gap: 48px;
 }
 
@@ -102,11 +97,7 @@ a:hover {
 }
 
 .avatar__circle {
-  position: absolute;
-  inset: -10px;
-  border-radius: 9999px;
-  background: #d6d0c2;
-  z-index: 0;
+  display: none;
 }
 
 .hero {
@@ -523,5 +514,6 @@ a:hover {
 .case-media--poly-mobile {
   background: #ffffff;
 }
+
 
 
