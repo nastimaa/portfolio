@@ -142,11 +142,7 @@ a:hover {
   border-radius: 32px;
   background: #e6e6ea;
   height: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 500;
+  display: block;
   position: relative;
   overflow: hidden;
 }
@@ -167,11 +163,11 @@ a:hover {
   background: #ffe96b;
 }
 
-.case-card__image-placeholder {
-  padding: 10px 14px;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.4);
-  font-size: 14px;
+.case-card__image-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .case-card__meta {
