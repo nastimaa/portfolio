@@ -27,7 +27,6 @@ a:hover { text-decoration: underline; }
 
 /* Хедер */
 .site-header {
-  width: 100%;
   background: #ffffff;
   padding: 40px;
   display: flex;
@@ -107,11 +106,13 @@ a:hover { text-decoration: underline; }
 /* Контент */
 .content {
   padding: 0 40px 80px;
+  max-width: 1400px;
+  margin-inline: auto;
 }
+
 
 /* Блоки проектов */
 .project {
-  width: 100%;
   padding: 56px 0;
   border-top: 1px solid #e0e0e4;
 }
@@ -374,3 +375,4 @@ a:hover { text-decoration: underline; }
 .case-media--poly-alt { background: #fff3b3; }
 .case-media--poly-long { background: linear-gradient(180deg, #ffe96b 0%, #ffb8e4 100%); }
 .case-media--poly-mobile { background: #ffffff; }
+
