@@ -171,17 +171,20 @@ a:hover {
 }
 
 .project__media {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  padding: 24px;
+  border-radius: 24px;
+  background: #f5f5f7;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 12px;
-  margin-bottom: 12px;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 16px;
 }
 
 .project__media-item {
   display: block;
   border-radius: 20px;
   overflow: hidden;
-  background: #e6e6ea;
   aspect-ratio: 16/9;
 }
 
