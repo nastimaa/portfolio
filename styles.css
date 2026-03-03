@@ -310,7 +310,7 @@ a:hover { text-decoration: underline; }
 .next-case__title { font-weight: 500; }
 
 /* Polyglotica */
-.page--poly { background: #fffbe6; }
+.page--poly { background: #ffffff; }
 .page--poly .case-header { background: #fffbe6; }
 .case-media--poly-hero { background: #ffe96b; }
 .case-media--poly-card { background: #ffb8e4; }
