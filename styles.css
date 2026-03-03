@@ -135,80 +135,77 @@ a:hover {
 }
 
 .content {
-  padding-bottom: 56px;
+  padding: 0 64px 80px;
 }
 
-.case-card {
-  margin-inline: auto;
-  margin-bottom: 40px;
-  max-width: 960px;
+/* Блоки проектов на главной */
+.project {
+  width: 100%;
+  padding: 56px 0;
+  border-top: 1px solid #e0e0e4;
 }
 
-.case-card__image {
-  border-radius: 32px;
-  background: #e6e6ea;
-  height: 280px;
+.project:first-of-type {
+  border-top: none;
+}
+
+.project__title {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.project__desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.project__desc-col {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3a3a3e;
+}
+
+.project__media {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.project__media-item {
   display: block;
-  position: relative;
+  border-radius: 20px;
   overflow: hidden;
-}
-
-.case-card__image--hero {
-  background-image: linear-gradient(145deg, #ffb347, #ff5b5b);
-}
-
-.case-card__image--b2b {
-  background-image: linear-gradient(145deg, #f46b45, #eea849);
-}
-
-.case-card__image--poly-left,
-.case-card__image--poly-right,
-.case-card__image--poly {
-  /* используем базовый нейтральный фон, картинка даёт цвет */
   background: #e6e6ea;
+  aspect-ratio: 16/9;
 }
 
-.case-card__image-media {
+.project__media-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.case-card__meta {
-  margin-top: 12px;
-}
-
-.case-card__title {
-  margin: 4px 0 0;
-  font-size: 20px;
-}
-
-.case-card--poly__grid {
-  display: grid;
-  gap: 16px;
-}
-
-@media (min-width: 720px) {
-  .case-card--poly__grid {
-    grid-template-columns: 1.1fr 0.9fr;
-  }
+.project__meta {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 4px;
 }
 
 .skills {
-  margin-inline: auto;
-  max-width: 960px;
-  padding-top: 8px;
+  padding-top: 40px;
   border-top: 1px solid #e0e0e4;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-}
-
-@media (min-width: 720px) {
-  .skills {
-    grid-template-columns: 1.1fr 1.1fr;
-  }
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
 
 .skills__title {
@@ -220,6 +217,24 @@ a:hover {
   margin: 0;
   font-size: 14px;
   color: #4b4b4f;
+}
+
+@media (max-width: 900px) {
+  .content {
+    padding: 0 24px 60px;
+  }
+
+  .project__desc {
+    grid-template-columns: 1fr;
+  }
+
+  .project__media {
+    grid-template-columns: 1fr;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
 }
 
 .site-footer {
